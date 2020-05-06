@@ -1,5 +1,8 @@
 //wide screens
 @include mediaXl {
+  .skill {
+    width: 60%;
+  }
 }
 //Desktop & laptops
 @include mediaLg {
@@ -42,6 +45,19 @@
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "skill1"
+      "skill2";
+    grid-template-columns: 1fr;
+  }
+
+  .mdl {
+    padding-right: 50px;
   }
 }
 //smartphones
